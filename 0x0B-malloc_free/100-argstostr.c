@@ -35,14 +35,15 @@ char *argstostr(int ac, char **av)
      s = av[i];
      k = 0;
 
-while (s[k])
-str[j] = s[k];
-k++;
-j++;
+     while (s[k])
+     {
+        str[j] = s[k];
+        k++;
+        j++;
      }
- str[j++] = '\n';
+     str[j++] = '\n';
   }
-str[j] = '\0';
+  str[j] = '\0';
 
-return (str);
+  return (str);
 }
